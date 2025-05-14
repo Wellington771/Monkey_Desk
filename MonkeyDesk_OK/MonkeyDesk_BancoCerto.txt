@@ -1,0 +1,110 @@
+
+CREATE DATABASE SuporteChamados
+ON PRIMARY
+(
+    NAME = SuporteChamados,
+    FILENAME = 'C:\BD\SuporteChamados.MDF',  -- Caminho do arquivo de dados (MDF)
+    SIZE = 100MB,                            -- Tamanho inicial do arquivo
+    MAXSIZE = 500MB,                         -- Tamanho máximo do arquivo
+    FILEGROWTH = 5%                          -- Crescimento do arquivo em 5% quando necessário
+);
+GO
+USE SuporteChamados;
+GO
+
+
+-- ===========================================
+-- TABELA: USUÁRIOS (Solicitantes)
+-- ===========================================
+CREATE TABLE Usuarios (
+    UsuarioID INT PRIMARY KEY IDENTITY(1,1),
+    Nome NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) UNIQUE NOT NULL,
+    Telefone NVARCHAR(20),
+    Departamento NVARCHAR(100)
+);
+
+-- ===========================================
+-- TABELA: TÉCNICOS
+-- ===========================================
+CREATE TABLE Tecnicos (
+    IdTecnico INT PRIMARY KEY IDENTITY(1,1),
+    Nome NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) UNIQUE NOT NULL,
+    Especialidade NVARCHAR(100)
+);
+
+-- ===========================================
+-- TABELA: CATEGORIAS
+-- ===========================================
+CREATE TABLE Categorias (
+    CategoriaID INT PRIMARY KEY IDENTITY(1,1),
+    Nome VARCHAR(100) NOT NULL
+);
+
+-- ===========================================
+-- TABELA: PRIORIDADES
+-- ===========================================
+CREATE TABLE Prioridades (
+    PrioridadeID INT PRIMARY KEY IDENTITY(1,1),
+    Nome VARCHAR(50) NOT NULL, -- Ex: Alta, Média, Baixa
+    TempoRespostaHoras INT NOT NULL,
+    TempoResolucaoHoras INT NOT NULL
+);
+
+-- ===========================================
+-- TABELA: STATUS DOS CHAMADOS
+-- ===========================================
+CREATE TABLE StatusChamado (
+    StatusID INT PRIMARY KEY IDENTITY(1,1),
+    Nome NVARCHAR(50) NOT NULL -- Ex: Aberto, Em andamento, Pendente, Resolvido, Fechado
+);
+
+-- ===========================================
+-- TABELA: CHAMADOS
+-- ===========================================
+CREATE TABLE Chamados (
+    ChamadoID INT PRIMARY KEY IDENTITY(1,1),
+    UsuarioID INT NOT NULL FOREIGN KEY REFERENCES Usuarios(UsuarioID),
+    IdTecnico INT NULL FOREIGN KEY REFERENCES Tecnicos(IdTecnico),
+    CategoriaID INT FOREIGN KEY REFERENCES Categorias(CategoriaID),
+    PrioridadeID INT FOREIGN KEY REFERENCES Prioridades(PrioridadeID),
+    StatusID INT FOREIGN KEY REFERENCES StatusChamado(StatusID),
+    Titulo NVARCHAR(200) NOT NULL,
+    Descricao NVARCHAR(MAX),
+    DataAbertura DATETIME DEFAULT GETDATE(),
+    DataFechamento DATETIME NULL
+);
+
+-- ===========================================
+-- TABELA: INTERAÇÕES DOS CHAMADOS
+-- ===========================================
+CREATE TABLE InteracoesChamado (
+    InteracaoID INT PRIMARY KEY IDENTITY(1,1),
+    ChamadoID INT FOREIGN KEY REFERENCES Chamados(ChamadoID),
+    Mensagem VARCHAR(MAX) NOT NULL,
+    DataInteracao DATETIME DEFAULT GETDATE(),
+    Autor VARCHAR(100) NOT NULL -- Nome do técnico ou usuário
+);
+
+-- ===========================================
+-- TABELA: HISTÓRICO DE SLA
+-- ===========================================
+CREATE TABLE SLAHistorico (
+    SLAID INT PRIMARY KEY IDENTITY(1,1),
+    ChamadoID INT FOREIGN KEY REFERENCES Chamados(ChamadoID),
+    TempoRespostaRealizado INT,
+    TempoResolucaoRealizado INT,
+    SLA_Cumprido BIT
+);
+
+-- ===========================================
+-- VIEW: CHAMADOS POR STATUS (Relatório simples)
+-- ===========================================
+--CREATE VIEW vw_ChamadosPorStatus AS
+--SELECT 
+--    ISNULL(SC.Nome, 'Sem Status') AS Status,  -- Exibe 'Sem Status' se não houver status definido
+--    COUNT(C.ChamadoID) AS TotalChamados
+--FROM Chamados C
+--LEFT JOIN StatusChamado SC ON C.StatusID = SC.StatusID
+--GROUP BY SC.Nome;
