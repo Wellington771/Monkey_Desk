@@ -12,3 +12,17 @@ D:\Wellington correia\GitHub\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Protot
 D:\Wellington correia\GitHub\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.CoreCompileInputs.cache
 D:\Wellington correia\GitHub\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.exe
 D:\Wellington correia\GitHub\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.pdb
+D:\Vida_Nova\Bruno_Manzoli\Trabalho_MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.exe.config
+D:\Vida_Nova\Bruno_Manzoli\Trabalho_MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.exe
+D:\Vida_Nova\Bruno_Manzoli\Trabalho_MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.pdb
+D:\Vida_Nova\Bruno_Manzoli\Trabalho_MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.AssemblyReference.cache
+D:\Vida_Nova\Bruno_Manzoli\Trabalho_MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.SuggestedBindingRedirects.cache
+D:\Vida_Nova\Bruno_Manzoli\Trabalho_MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.Chamados.resources
+D:\Vida_Nova\Bruno_Manzoli\Trabalho_MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.Login.resources
+D:\Vida_Nova\Bruno_Manzoli\Trabalho_MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.telaPrincipal.resources
+D:\Vida_Nova\Bruno_Manzoli\Trabalho_MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.Properties.Resources.resources
+D:\Vida_Nova\Bruno_Manzoli\Trabalho_MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.TelaDeChamadocs.resources
+D:\Vida_Nova\Bruno_Manzoli\Trabalho_MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.GenerateResource.cache
+D:\Vida_Nova\Bruno_Manzoli\Trabalho_MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.CoreCompileInputs.cache
+D:\Vida_Nova\Bruno_Manzoli\Trabalho_MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.exe
+D:\Vida_Nova\Bruno_Manzoli\Trabalho_MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.pdb
