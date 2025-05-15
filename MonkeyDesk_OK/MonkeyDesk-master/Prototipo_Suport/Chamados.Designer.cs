@@ -139,7 +139,7 @@
             // btnHistorico
             // 
             this.btnHistorico.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHistorico.Location = new System.Drawing.Point(737, 257);
+            this.btnHistorico.Location = new System.Drawing.Point(737, 158);
             this.btnHistorico.Name = "btnHistorico";
             this.btnHistorico.Size = new System.Drawing.Size(91, 30);
             this.btnHistorico.TabIndex = 45;
@@ -159,7 +159,7 @@
             // btnSalvar
             // 
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(737, 305);
+            this.btnSalvar.Location = new System.Drawing.Point(737, 231);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(91, 30);
             this.btnSalvar.TabIndex = 43;
@@ -193,7 +193,7 @@
             this.txtDescricao.Location = new System.Drawing.Point(116, 158);
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(615, 177);
+            this.txtDescricao.Size = new System.Drawing.Size(615, 103);
             this.txtDescricao.TabIndex = 40;
             // 
             // label5
@@ -245,7 +245,7 @@
             this.dgvHistorico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHistorico.Location = new System.Drawing.Point(15, 10);
             this.dgvHistorico.Name = "dgvHistorico";
-            this.dgvHistorico.Size = new System.Drawing.Size(916, 337);
+            this.dgvHistorico.Size = new System.Drawing.Size(916, 276);
             this.dgvHistorico.TabIndex = 54;
             // 
             // Chamados
@@ -273,7 +273,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Chamados";
-            this.Size = new System.Drawing.Size(942, 355);
+            this.Size = new System.Drawing.Size(942, 301);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorico)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
