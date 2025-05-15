@@ -12,3 +12,17 @@ D:\Wellington correia\GitHub\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Protot
 D:\Wellington correia\GitHub\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.CoreCompileInputs.cache
 D:\Wellington correia\GitHub\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.exe
 D:\Wellington correia\GitHub\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.pdb
+D:\Joâo_Augusto\Nova\MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.AssemblyReference.cache
+D:\Joâo_Augusto\Nova\MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.SuggestedBindingRedirects.cache
+D:\Joâo_Augusto\Nova\MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.Chamados.resources
+D:\Joâo_Augusto\Nova\MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.Login.resources
+D:\Joâo_Augusto\Nova\MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.telaPrincipal.resources
+D:\Joâo_Augusto\Nova\MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.Properties.Resources.resources
+D:\Joâo_Augusto\Nova\MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.TelaDeChamadocs.resources
+D:\Joâo_Augusto\Nova\MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.GenerateResource.cache
+D:\Joâo_Augusto\Nova\MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.CoreCompileInputs.cache
+D:\Joâo_Augusto\Nova\MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.exe
+D:\Joâo_Augusto\Nova\MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.pdb
+D:\Joâo_Augusto\Nova\MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.exe.config
+D:\Joâo_Augusto\Nova\MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.exe
+D:\Joâo_Augusto\Nova\MonkeyDesk_OK\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.pdb

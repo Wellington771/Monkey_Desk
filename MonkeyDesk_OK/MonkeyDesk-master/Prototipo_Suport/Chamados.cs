@@ -13,12 +13,23 @@ namespace Prototipo_Suport
 {
     public partial class Chamados : UserControl
     {
-
+        public int UsuarioLogadoId { get; set; }
 
         string strConexao = @"Data Source=.\SQLEXPRESS;Initial Catalog=SuporteChamados;Integrated Security=True";
         SqlConnection objconexao;
 
-        public int IdChamado { get; set; }
+        private int _idChamado;
+        public int IdChamado
+        {
+            get { return _idChamado; }
+            set
+            {
+                _idChamado = value;
+                if (_idChamado != 0)
+                    CarregarChamado();
+            }
+        }
+
         public Chamados()
         {
             InitializeComponent();
@@ -30,16 +41,26 @@ namespace Prototipo_Suport
         public string Assunto
         {
             get => lbAssunto.Text;
-            set => lbAssunto.Text = "Assunto: " + value;
+            set => lbAssunto.Text = "" + value;
         }
 
         public string Cliente
         {
             get => lbCliente.Text;
-            set => lbCliente.Text = "Cliente: " + value;
+            set => lbCliente.Text = "" + value;
         }
 
+        public string DataAbertura
+        {
+            get => mtbData.Text;
+            set => mtbData.Text = " " + value;
+        }
 
+        public string HoraAbertura
+        {
+            get => mtbHora.Text;
+            set => mtbHora.Text = "" + value;
+        }
 
         public string StatusSelecionado
         {
@@ -53,25 +74,36 @@ namespace Prototipo_Suport
             set => cmbTecnico.SelectedValue = value;
         }
 
-      
-        private void CarregarHistoricoChamado(int idChamado)
+        private void CarregarChamado()
         {
+            if (_idChamado == 0)
+                return;
+
             using (SqlConnection conn = new SqlConnection(strConexao))
             {
-                SqlCommand cmd = new SqlCommand("SELECT h.dataAlteracao, u.usuario, h.descricaoAlteracao " +
-                                               "FROM tblHistoricoChamado h " +
-                                               "JOIN tblUsuarios u ON h.idUsuario = u.idUsuario " +
-                                               "WHERE h.idChamado = @idChamado " +
-                                               "ORDER BY h.dataAlteracao DESC", conn);
+                SqlCommand cmd = new SqlCommand(@"
+                    SELECT 
+                        c.idChamado,
+                        cli.nomeCliente,
+                        c.assunto,
+                        c.dataAbertura,
+                        c.horaAbertura
+                    FROM tblChamados c
+                    INNER JOIN tblClientes cli ON cli.idCliente = c.idCliente
+                    WHERE c.idChamado = @idChamado", conn);
 
-                cmd.Parameters.AddWithValue("@idChamado", idChamado);
+                cmd.Parameters.AddWithValue("@idChamado", _idChamado);
 
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-
-                // Preencher o DataGridView com o histórico
-                dgvHistorico.DataSource = dt;
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                {
+                    lbIdChamado.Text = "ID: " + reader["idChamado"].ToString();
+                    lbCliente.Text = "Cliente: " + reader["nomeCliente"].ToString();
+                    Assunto = reader["assunto"].ToString();
+                    DataAbertura = Convert.ToDateTime(reader["dataAbertura"]).ToString("dd/MM/yyyy");
+                    HoraAbertura = TimeSpan.Parse(reader["horaAbertura"].ToString()).ToString(@"hh\:mm");
+                }
             }
         }
 
@@ -80,7 +112,6 @@ namespace Prototipo_Suport
             cmbStatus.Items.AddRange(new string[] { "Aberto", "Em andamento", "Pendente", "Resolvido", "Fechado" });
         }
 
-        // Carregar técnicos do banco de dados
         private void CarregarTecnicos()
         {
             using (SqlConnection conn = new SqlConnection(strConexao))
@@ -98,128 +129,138 @@ namespace Prototipo_Suport
 
         private void AtualizarChamado(string comentarioAlteracao)
         {
-            if (IdChamado == 0) return;
+            if (_idChamado == 0) return;
 
-            // Atualizar o chamado no banco com o novo status e técnico
             using (SqlConnection conn = new SqlConnection(strConexao))
             {
                 SqlCommand cmd = new SqlCommand(@"
-                UPDATE tblChamados
-                SET statuss = @status, tecnicoResponsavel = @tecnico
-                WHERE idChamado = @id", conn);
+                    UPDATE tblChamados
+                    SET statuss = @status, tecnicoResponsavel = @tecnico
+                    WHERE idChamado = @id", conn);
 
                 cmd.Parameters.AddWithValue("@status", cmbStatus.Text);
                 cmd.Parameters.AddWithValue("@tecnico", cmbTecnico.SelectedValue);
-                cmd.Parameters.AddWithValue("@id", IdChamado);
+                cmd.Parameters.AddWithValue("@id", _idChamado);
 
                 conn.Open();
                 cmd.ExecuteNonQuery();
             }
 
-            // Adicionar a alteração ao histórico do chamado
-            AdicionarHistorico(IdChamado, comentarioAlteracao);
+            AdicionarHistorico(comentarioAlteracao);
         }
 
-        private void AdicionarHistorico(int idChamado, string comentarioAlteracao)
+        private void AdicionarHistorico(string comentarioAlteracao)
         {
             using (SqlConnection conn = new SqlConnection(strConexao))
             {
                 SqlCommand cmd = new SqlCommand(@"
-                INSERT INTO tblHistoricoChamado (idChamado, descricaoAlteracao, idUsuario)
-                VALUES (@idChamado, @descricaoAlteracao, @idUsuario)", conn);
+                    INSERT INTO tblHistoricoChamado (idChamado, descricaoAlteracao, idUsuario)
+                    VALUES (@idChamado, @descricaoAlteracao, @idUsuario)", conn);
 
-                // Aqui, você pode pegar o ID do usuário logado. Exemplo:
-                // cmd.Parameters.AddWithValue("@idUsuario", usuarioLogadoId);  
-                // Para o exemplo, vamos assumir que o ID do técnico que está fazendo a alteração é o mesmo do ComboBox:
-                cmd.Parameters.AddWithValue("@idChamado", idChamado);
+                cmd.Parameters.AddWithValue("@idChamado", _idChamado);
                 cmd.Parameters.AddWithValue("@descricaoAlteracao", comentarioAlteracao);
-                cmd.Parameters.AddWithValue("@idUsuario", cmbTecnico.SelectedValue);
+                cmd.Parameters.AddWithValue("@idUsuario", UsuarioLogadoId);
 
                 conn.Open();
                 cmd.ExecuteNonQuery();
             }
         }
 
-        private void CarregarChamado()
+        private void CarregarHistoricoChamado(int idChamado)
         {
-            if (IdChamado == 0) return;
-
-            SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=SuporteChamados;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand(@"
-        SELECT 
-            c.idChamado,
-            cli.nomeCliente,
-            c.dataAbertura,
-            c.horaAbertura
-        FROM tblChamados c
-        INNER JOIN tblClientes cli ON cli.idCliente = c.idCliente
-        WHERE c.idChamado = @idChamado", conn);
-
-            cmd.Parameters.AddWithValue("@idChamado", IdChamado);
-
-            conn.Open();
-            SqlDataReader reader = cmd.ExecuteReader();
-            if (reader.Read())
+            try
             {
-                lbIdChamado.Text = "ID: " + reader["idChamado"].ToString();
-                lbCliente.Text = "Cliente: " + reader["nomeCliente"].ToString();
-                mtbData.Text = "Data: " + Convert.ToDateTime(reader["dataAbertura"]).ToString("dd/MM/yyyy");
-                mtbHora.Text = "Hora: " + TimeSpan.Parse(reader["horaAbertura"].ToString()).ToString(@"hh\:mm");
+                using (SqlConnection conn = new SqlConnection(strConexao))
+                {
+                    string sql = @"
+                SELECT 
+                    h.dataAlteracao AS Data,
+                    u.usuario AS Tecnico,
+                    h.descricaoAlteracao AS Descricao
+                FROM tblHistoricoChamado h
+                INNER JOIN tblUsuarios u ON h.idUsuario = u.idUsuario
+                WHERE h.idChamado = @idChamado
+                ORDER BY h.dataAlteracao DESC";
+
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@idChamado", idChamado);
+
+                    SqlDataAdapter da = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    da.Fill(dt);
+
+                    MessageBox.Show("Linhas carregadas: " + dt.Rows.Count);
+
+                    dgvHistorico.DataSource = null;
+                    dgvHistorico.DataSource = dt;
+
+                    dgvHistorico.AutoGenerateColumns = true;
+
+                    if (dgvHistorico.Columns["Data"] != null)
+                        dgvHistorico.Columns["Data"].Width = 130;
+                    if (dgvHistorico.Columns["Tecnico"] != null)
+                        dgvHistorico.Columns["Tecnico"].Width = 150;
+                    if (dgvHistorico.Columns["Descricao"] != null)
+                        dgvHistorico.Columns["Descricao"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                }
             }
-            conn.Close();
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar histórico: " + ex.Message);
+            }
         }
+
+
 
         private void btnHistorico_Click(object sender, EventArgs e)
         {
-            dgvHistorico.Visible = true;
-            if (IdChamado == 0)
+            if (_idChamado == 0)
             {
                 MessageBox.Show("Não há um chamado válido para visualizar o histórico.");
                 return;
             }
 
-            // Carregar histórico do chamado
-            CarregarHistoricoChamado(IdChamado);
+            dgvHistorico.Visible = !dgvHistorico.Visible;
+
+            if (dgvHistorico.Visible)
+            {
+                CarregarHistoricoChamado(_idChamado);
+            }
         }
-
-
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            if (IdChamado == 0)
+            if (_idChamado == 0)
             {
                 MessageBox.Show("Não há um chamado válido para salvar.");
                 return;
             }
 
-            // Texto que será registrado no histórico de alterações
-            string comentario = txtDescricao.Text.Trim(); // Supondo que txtComentario seja um TextBox para o comentário do técnico
+            string comentario = txtDescricao.Text.Trim();
 
-            // Verifica se o comentário não está vazio
             if (string.IsNullOrEmpty(comentario))
             {
                 MessageBox.Show("Por favor, insira um comentário antes de salvar.");
                 return;
             }
 
-            // Atualizar chamado (status e técnico responsável)
             AtualizarChamado(comentario);
 
-            // Mostrar mensagem de sucesso
             MessageBox.Show("Chamado atualizado com sucesso!");
 
-            // Limpar campo de comentário após salvar (opcional)
             txtDescricao.Clear();
         }
 
         private void cmbTecnico_SelectedIndexChanged(object sender, EventArgs e)
         {
-            AtualizarChamado("Alteração de técnico para " + cmbTecnico.Text);
+            if (_idChamado != 0)
+                AtualizarChamado("Alteração de técnico para " + cmbTecnico.Text);
         }
 
         private void cmbStatus_SelectedIndexChanged(object sender, EventArgs e)
         {
-            AtualizarChamado("Alteração de status para " + cmbStatus.Text);
+            if (_idChamado != 0)
+                AtualizarChamado("Alteração de status para " + cmbStatus.Text);
         }
     }
 }

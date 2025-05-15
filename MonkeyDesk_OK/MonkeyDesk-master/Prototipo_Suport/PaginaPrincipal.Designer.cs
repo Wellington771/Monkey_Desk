@@ -33,41 +33,44 @@
             this.btnAberto = new System.Windows.Forms.Button();
             this.vScrollBar3 = new System.Windows.Forms.VScrollBar();
             this.pnDashboard = new System.Windows.Forms.Panel();
-            this.btnFechado = new System.Windows.Forms.Button();
-            this.btnResolvido = new System.Windows.Forms.Button();
-            this.lbChamados = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lbUsuario = new System.Windows.Forms.Label();
-            this.btnNovoChamado = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.btnBuscarChamado = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbAbertos = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lbAndamento = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.lbPendente = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label35 = new System.Windows.Forms.Label();
             this.lbFechados = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label37 = new System.Windows.Forms.Label();
             this.lbResolvidos = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.lbPendente = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbAndamento = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbAbertos = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnFechado = new System.Windows.Forms.Button();
+            this.btnResolvido = new System.Windows.Forms.Button();
+            this.lbChamados = new System.Windows.Forms.Label();
+            this.lbUsuario = new System.Windows.Forms.Label();
+            this.btnNovoChamado = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
+            this.btnBuscarChamado = new System.Windows.Forms.Button();
             this.pnMenu = new System.Windows.Forms.Panel();
             this.pbUsuario = new System.Windows.Forms.PictureBox();
             this.pbLupa = new System.Windows.Forms.PictureBox();
             this.pbEstatisticas = new System.Windows.Forms.PictureBox();
             this.pbNovoChamado = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.pbMonkey = new System.Windows.Forms.PictureBox();
             this.pnAtalho = new System.Windows.Forms.Panel();
+            this.pnLista = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pnDashboard.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.pnMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLupa)).BeginInit();
@@ -75,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbNovoChamado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMonkey)).BeginInit();
             this.pnAtalho.SuspendLayout();
+            this.pnLista.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAndamento
@@ -135,191 +139,10 @@
             this.pnDashboard.Controls.Add(this.panel2);
             this.pnDashboard.Controls.Add(this.panel1);
             this.pnDashboard.Controls.Add(this.vScrollBar3);
-            this.pnDashboard.Location = new System.Drawing.Point(231, 137);
+            this.pnDashboard.Location = new System.Drawing.Point(232, 135);
             this.pnDashboard.Name = "pnDashboard";
-            this.pnDashboard.Size = new System.Drawing.Size(1085, 516);
+            this.pnDashboard.Size = new System.Drawing.Size(1081, 517);
             this.pnDashboard.TabIndex = 2;
-            // 
-            // btnFechado
-            // 
-            this.btnFechado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnFechado.FlatAppearance.BorderSize = 0;
-            this.btnFechado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFechado.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFechado.ForeColor = System.Drawing.Color.Black;
-            this.btnFechado.Location = new System.Drawing.Point(672, 67);
-            this.btnFechado.Name = "btnFechado";
-            this.btnFechado.Size = new System.Drawing.Size(146, 50);
-            this.btnFechado.TabIndex = 5;
-            this.btnFechado.Text = "Fechados";
-            this.btnFechado.UseVisualStyleBackColor = false;
-            // 
-            // btnResolvido
-            // 
-            this.btnResolvido.BackColor = System.Drawing.Color.Cyan;
-            this.btnResolvido.FlatAppearance.BorderSize = 0;
-            this.btnResolvido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnResolvido.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResolvido.ForeColor = System.Drawing.Color.Black;
-            this.btnResolvido.Location = new System.Drawing.Point(507, 67);
-            this.btnResolvido.Name = "btnResolvido";
-            this.btnResolvido.Size = new System.Drawing.Size(146, 50);
-            this.btnResolvido.TabIndex = 6;
-            this.btnResolvido.Text = "Resolvido";
-            this.btnResolvido.UseVisualStyleBackColor = false;
-            // 
-            // lbChamados
-            // 
-            this.lbChamados.AutoSize = true;
-            this.lbChamados.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbChamados.Location = new System.Drawing.Point(7, 26);
-            this.lbChamados.Name = "lbChamados";
-            this.lbChamados.Size = new System.Drawing.Size(123, 28);
-            this.lbChamados.TabIndex = 7;
-            this.lbChamados.Text = "Chamados";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lbAbertos);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(7, 53);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(181, 111);
-            this.panel1.TabIndex = 2;
-            // 
-            // lbUsuario
-            // 
-            this.lbUsuario.AutoSize = true;
-            this.lbUsuario.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUsuario.Location = new System.Drawing.Point(70, 215);
-            this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(97, 28);
-            this.lbUsuario.TabIndex = 12;
-            this.lbUsuario.Text = "Usuário";
-            // 
-            // btnNovoChamado
-            // 
-            this.btnNovoChamado.BackColor = System.Drawing.Color.White;
-            this.btnNovoChamado.FlatAppearance.BorderSize = 0;
-            this.btnNovoChamado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNovoChamado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovoChamado.ForeColor = System.Drawing.Color.Black;
-            this.btnNovoChamado.Location = new System.Drawing.Point(0, 306);
-            this.btnNovoChamado.Name = "btnNovoChamado";
-            this.btnNovoChamado.Size = new System.Drawing.Size(228, 59);
-            this.btnNovoChamado.TabIndex = 8;
-            this.btnNovoChamado.Text = "Novo chamado";
-            this.btnNovoChamado.UseVisualStyleBackColor = false;
-            this.btnNovoChamado.Click += new System.EventHandler(this.btnNovoChamado_Click);
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.Color.White;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.Black;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 429);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(228, 59);
-            this.btnDashboard.TabIndex = 9;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            // 
-            // btnBuscarChamado
-            // 
-            this.btnBuscarChamado.BackColor = System.Drawing.Color.White;
-            this.btnBuscarChamado.FlatAppearance.BorderSize = 0;
-            this.btnBuscarChamado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarChamado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarChamado.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscarChamado.Location = new System.Drawing.Point(0, 552);
-            this.btnBuscarChamado.Name = "btnBuscarChamado";
-            this.btnBuscarChamado.Size = new System.Drawing.Size(228, 59);
-            this.btnBuscarChamado.TabIndex = 10;
-            this.btnBuscarChamado.Text = "Buscar chamado";
-            this.btnBuscarChamado.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Lime;
-            this.label3.Location = new System.Drawing.Point(36, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 28);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Abertos";
-            // 
-            // lbAbertos
-            // 
-            this.lbAbertos.AutoSize = true;
-            this.lbAbertos.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAbertos.Location = new System.Drawing.Point(67, 57);
-            this.lbAbertos.Name = "lbAbertos";
-            this.lbAbertos.Size = new System.Drawing.Size(38, 41);
-            this.lbAbertos.TabIndex = 13;
-            this.lbAbertos.Text = "0";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.lbAndamento);
-            this.panel2.Location = new System.Drawing.Point(435, 53);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(181, 111);
-            this.panel2.TabIndex = 17;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(79, 53);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 41);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "0";
-            // 
-            // lbAndamento
-            // 
-            this.lbAndamento.AutoSize = true;
-            this.lbAndamento.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAndamento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lbAndamento.Location = new System.Drawing.Point(23, 16);
-            this.lbAndamento.Name = "lbAndamento";
-            this.lbAndamento.Size = new System.Drawing.Size(150, 28);
-            this.lbAndamento.TabIndex = 16;
-            this.lbAndamento.Text = "Andamento";
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label13);
-            this.panel6.Controls.Add(this.lbPendente);
-            this.panel6.Location = new System.Drawing.Point(649, 53);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(181, 111);
-            this.panel6.TabIndex = 18;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(70, 53);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(38, 41);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "0";
-            // 
-            // lbPendente
-            // 
-            this.lbPendente.AutoSize = true;
-            this.lbPendente.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPendente.ForeColor = System.Drawing.Color.Red;
-            this.lbPendente.Location = new System.Drawing.Point(30, 16);
-            this.lbPendente.Name = "lbPendente";
-            this.lbPendente.Size = new System.Drawing.Size(121, 28);
-            this.lbPendente.TabIndex = 16;
-            this.lbPendente.Text = "Pendente";
             // 
             // panel17
             // 
@@ -381,6 +204,187 @@
             this.lbResolvidos.TabIndex = 16;
             this.lbResolvidos.Text = "Resolvidos";
             // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.label13);
+            this.panel6.Controls.Add(this.lbPendente);
+            this.panel6.Location = new System.Drawing.Point(649, 53);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(181, 111);
+            this.panel6.TabIndex = 18;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(70, 53);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(38, 41);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "0";
+            // 
+            // lbPendente
+            // 
+            this.lbPendente.AutoSize = true;
+            this.lbPendente.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPendente.ForeColor = System.Drawing.Color.Red;
+            this.lbPendente.Location = new System.Drawing.Point(30, 16);
+            this.lbPendente.Name = "lbPendente";
+            this.lbPendente.Size = new System.Drawing.Size(121, 28);
+            this.lbPendente.TabIndex = 16;
+            this.lbPendente.Text = "Pendente";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.lbAndamento);
+            this.panel2.Location = new System.Drawing.Point(435, 53);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(181, 111);
+            this.panel2.TabIndex = 17;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(79, 53);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 41);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "0";
+            // 
+            // lbAndamento
+            // 
+            this.lbAndamento.AutoSize = true;
+            this.lbAndamento.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAndamento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lbAndamento.Location = new System.Drawing.Point(23, 16);
+            this.lbAndamento.Name = "lbAndamento";
+            this.lbAndamento.Size = new System.Drawing.Size(150, 28);
+            this.lbAndamento.TabIndex = 16;
+            this.lbAndamento.Text = "Andamento";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.lbAbertos);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(7, 53);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(181, 111);
+            this.panel1.TabIndex = 2;
+            // 
+            // lbAbertos
+            // 
+            this.lbAbertos.AutoSize = true;
+            this.lbAbertos.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAbertos.Location = new System.Drawing.Point(67, 57);
+            this.lbAbertos.Name = "lbAbertos";
+            this.lbAbertos.Size = new System.Drawing.Size(38, 41);
+            this.lbAbertos.TabIndex = 13;
+            this.lbAbertos.Text = "0";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Lime;
+            this.label3.Location = new System.Drawing.Point(36, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(102, 28);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Abertos";
+            // 
+            // btnFechado
+            // 
+            this.btnFechado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnFechado.FlatAppearance.BorderSize = 0;
+            this.btnFechado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechado.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechado.ForeColor = System.Drawing.Color.Black;
+            this.btnFechado.Location = new System.Drawing.Point(672, 67);
+            this.btnFechado.Name = "btnFechado";
+            this.btnFechado.Size = new System.Drawing.Size(146, 50);
+            this.btnFechado.TabIndex = 5;
+            this.btnFechado.Text = "Fechados";
+            this.btnFechado.UseVisualStyleBackColor = false;
+            // 
+            // btnResolvido
+            // 
+            this.btnResolvido.BackColor = System.Drawing.Color.Cyan;
+            this.btnResolvido.FlatAppearance.BorderSize = 0;
+            this.btnResolvido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResolvido.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResolvido.ForeColor = System.Drawing.Color.Black;
+            this.btnResolvido.Location = new System.Drawing.Point(507, 67);
+            this.btnResolvido.Name = "btnResolvido";
+            this.btnResolvido.Size = new System.Drawing.Size(146, 50);
+            this.btnResolvido.TabIndex = 6;
+            this.btnResolvido.Text = "Resolvido";
+            this.btnResolvido.UseVisualStyleBackColor = false;
+            // 
+            // lbChamados
+            // 
+            this.lbChamados.AutoSize = true;
+            this.lbChamados.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbChamados.Location = new System.Drawing.Point(7, 26);
+            this.lbChamados.Name = "lbChamados";
+            this.lbChamados.Size = new System.Drawing.Size(123, 28);
+            this.lbChamados.TabIndex = 7;
+            this.lbChamados.Text = "Chamados";
+            // 
+            // lbUsuario
+            // 
+            this.lbUsuario.AutoSize = true;
+            this.lbUsuario.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUsuario.Location = new System.Drawing.Point(70, 215);
+            this.lbUsuario.Name = "lbUsuario";
+            this.lbUsuario.Size = new System.Drawing.Size(97, 28);
+            this.lbUsuario.TabIndex = 12;
+            this.lbUsuario.Text = "Usuário";
+            // 
+            // btnNovoChamado
+            // 
+            this.btnNovoChamado.BackColor = System.Drawing.Color.White;
+            this.btnNovoChamado.FlatAppearance.BorderSize = 0;
+            this.btnNovoChamado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNovoChamado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovoChamado.ForeColor = System.Drawing.Color.Black;
+            this.btnNovoChamado.Location = new System.Drawing.Point(0, 306);
+            this.btnNovoChamado.Name = "btnNovoChamado";
+            this.btnNovoChamado.Size = new System.Drawing.Size(228, 59);
+            this.btnNovoChamado.TabIndex = 8;
+            this.btnNovoChamado.Text = "Novo chamado";
+            this.btnNovoChamado.UseVisualStyleBackColor = false;
+            this.btnNovoChamado.Click += new System.EventHandler(this.btnNovoChamado_Click);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.White;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.Black;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 429);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(228, 59);
+            this.btnDashboard.TabIndex = 9;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.UseVisualStyleBackColor = false;
+            // 
+            // btnBuscarChamado
+            // 
+            this.btnBuscarChamado.BackColor = System.Drawing.Color.White;
+            this.btnBuscarChamado.FlatAppearance.BorderSize = 0;
+            this.btnBuscarChamado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarChamado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarChamado.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscarChamado.Location = new System.Drawing.Point(0, 552);
+            this.btnBuscarChamado.Name = "btnBuscarChamado";
+            this.btnBuscarChamado.Size = new System.Drawing.Size(228, 59);
+            this.btnBuscarChamado.TabIndex = 10;
+            this.btnBuscarChamado.Text = "Buscar chamado";
+            this.btnBuscarChamado.UseVisualStyleBackColor = false;
+            // 
             // pnMenu
             // 
             this.pnMenu.BackColor = System.Drawing.Color.RoyalBlue;
@@ -392,6 +396,7 @@
             this.pnMenu.Controls.Add(this.btnBuscarChamado);
             this.pnMenu.Controls.Add(this.pbNovoChamado);
             this.pnMenu.Controls.Add(this.btnNovoChamado);
+            this.pnMenu.Controls.Add(this.panel3);
             this.pnMenu.Location = new System.Drawing.Point(1, 2);
             this.pnMenu.Name = "pnMenu";
             this.pnMenu.Size = new System.Drawing.Size(231, 650);
@@ -437,6 +442,13 @@
             this.pbNovoChamado.TabIndex = 13;
             this.pbNovoChamado.TabStop = false;
             // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(230, 138);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1085, 513);
+            this.panel3.TabIndex = 16;
+            // 
             // pbMonkey
             // 
             this.pbMonkey.Image = global::Prototipo_Suport.Properties.Resources.MnkeyDeskF;
@@ -459,8 +471,28 @@
             this.pnAtalho.Controls.Add(this.btnResolvido);
             this.pnAtalho.Location = new System.Drawing.Point(219, 2);
             this.pnAtalho.Name = "pnAtalho";
-            this.pnAtalho.Size = new System.Drawing.Size(1096, 135);
+            this.pnAtalho.Size = new System.Drawing.Size(1096, 132);
             this.pnAtalho.TabIndex = 9;
+            // 
+            // pnLista
+            // 
+            this.pnLista.BackColor = System.Drawing.Color.Black;
+            this.pnLista.Controls.Add(this.flowLayoutPanel1);
+            this.pnLista.Location = new System.Drawing.Point(231, 134);
+            this.pnLista.Name = "pnLista";
+            this.pnLista.Size = new System.Drawing.Size(1085, 518);
+            this.pnLista.TabIndex = 10;
+            this.pnLista.Paint += new System.Windows.Forms.PaintEventHandler(this.pnLista_Paint);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(11, 19);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1034, 498);
+            this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.WrapContents = false;
             // 
             // telaPrincipal
             // 
@@ -470,20 +502,22 @@
             this.ClientSize = new System.Drawing.Size(1318, 654);
             this.Controls.Add(this.pnAtalho);
             this.Controls.Add(this.pnMenu);
+            this.Controls.Add(this.pnLista);
             this.Controls.Add(this.pnDashboard);
             this.Name = "telaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.telaPrincipal_Load);
             this.pnDashboard.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.pnMenu.ResumeLayout(false);
             this.pnMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).EndInit();
@@ -493,6 +527,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbMonkey)).EndInit();
             this.pnAtalho.ResumeLayout(false);
             this.pnAtalho.PerformLayout();
+            this.pnLista.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -508,7 +543,6 @@
         private System.Windows.Forms.Button btnResolvido;
         private System.Windows.Forms.Label lbChamados;
         private System.Windows.Forms.PictureBox pbUsuario;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pbNovoChamado;
         private System.Windows.Forms.Label lbUsuario;
         private System.Windows.Forms.Button btnNovoChamado;
@@ -528,10 +562,14 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lbAndamento;
-        private System.Windows.Forms.Label lbAbertos;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel pnMenu;
         private System.Windows.Forms.Panel pnAtalho;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbAbertos;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnLista;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 
