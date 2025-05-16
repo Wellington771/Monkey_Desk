@@ -40,3 +40,17 @@ D:\Vida_Nova\Bruno_Manzoli\Nova pasta\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_
 D:\Vida_Nova\Bruno_Manzoli\Nova pasta\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.exe.config
 D:\Vida_Nova\Bruno_Manzoli\Nova pasta\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.exe
 D:\Vida_Nova\Bruno_Manzoli\Nova pasta\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.pdb
+D:\Wellington correia\GitHub\MonkeyDeskOk\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.exe.config
+D:\Wellington correia\GitHub\MonkeyDeskOk\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.exe
+D:\Wellington correia\GitHub\MonkeyDeskOk\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.pdb
+D:\Wellington correia\GitHub\MonkeyDeskOk\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.AssemblyReference.cache
+D:\Wellington correia\GitHub\MonkeyDeskOk\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.SuggestedBindingRedirects.cache
+D:\Wellington correia\GitHub\MonkeyDeskOk\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.Chamados.resources
+D:\Wellington correia\GitHub\MonkeyDeskOk\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.Login.resources
+D:\Wellington correia\GitHub\MonkeyDeskOk\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.telaPrincipal.resources
+D:\Wellington correia\GitHub\MonkeyDeskOk\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.Properties.Resources.resources
+D:\Wellington correia\GitHub\MonkeyDeskOk\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.TelaDeChamadocs.resources
+D:\Wellington correia\GitHub\MonkeyDeskOk\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.GenerateResource.cache
+D:\Wellington correia\GitHub\MonkeyDeskOk\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.CoreCompileInputs.cache
+D:\Wellington correia\GitHub\MonkeyDeskOk\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.exe
+D:\Wellington correia\GitHub\MonkeyDeskOk\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.pdb
