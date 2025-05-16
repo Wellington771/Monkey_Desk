@@ -53,7 +53,7 @@ namespace Prototipo_Suport
         public string DataAbertura
         {
             get => mtbData.Text;
-            set => mtbData.Text = " " + value;
+            set => mtbData.Text = "" + value;
         }
 
         public string HoraAbertura
@@ -98,7 +98,7 @@ namespace Prototipo_Suport
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    lbIdChamado.Text = "ID: " + reader["idChamado"].ToString();
+                    lbIdChamado.Text = "" + reader["idChamado"].ToString();
                     lbCliente.Text = "Cliente: " + reader["nomeCliente"].ToString();
                     Assunto = reader["assunto"].ToString();
                     DataAbertura = Convert.ToDateTime(reader["dataAbertura"]).ToString("dd/MM/yyyy");

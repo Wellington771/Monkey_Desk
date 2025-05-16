@@ -31,7 +31,6 @@
             this.btnAndamento = new System.Windows.Forms.Button();
             this.btnPendente = new System.Windows.Forms.Button();
             this.btnAberto = new System.Windows.Forms.Button();
-            this.vScrollBar3 = new System.Windows.Forms.VScrollBar();
             this.pnDashboard = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label35 = new System.Windows.Forms.Label();
@@ -123,13 +122,6 @@
             this.btnAberto.Text = "Aberto";
             this.btnAberto.UseVisualStyleBackColor = false;
             // 
-            // vScrollBar3
-            // 
-            this.vScrollBar3.Location = new System.Drawing.Point(1061, 0);
-            this.vScrollBar3.Name = "vScrollBar3";
-            this.vScrollBar3.Size = new System.Drawing.Size(20, 542);
-            this.vScrollBar3.TabIndex = 1;
-            // 
             // pnDashboard
             // 
             this.pnDashboard.BackColor = System.Drawing.Color.White;
@@ -138,10 +130,9 @@
             this.pnDashboard.Controls.Add(this.panel6);
             this.pnDashboard.Controls.Add(this.panel2);
             this.pnDashboard.Controls.Add(this.panel1);
-            this.pnDashboard.Controls.Add(this.vScrollBar3);
-            this.pnDashboard.Location = new System.Drawing.Point(232, 135);
+            this.pnDashboard.Location = new System.Drawing.Point(238, 134);
             this.pnDashboard.Name = "pnDashboard";
-            this.pnDashboard.Size = new System.Drawing.Size(1081, 517);
+            this.pnDashboard.Size = new System.Drawing.Size(1053, 517);
             this.pnDashboard.TabIndex = 2;
             // 
             // panel17
@@ -452,7 +443,7 @@
             // pbMonkey
             // 
             this.pbMonkey.Image = global::Prototipo_Suport.Properties.Resources.MnkeyDeskF;
-            this.pbMonkey.Location = new System.Drawing.Point(928, 5);
+            this.pbMonkey.Location = new System.Drawing.Point(923, 3);
             this.pbMonkey.Name = "pbMonkey";
             this.pbMonkey.Size = new System.Drawing.Size(138, 127);
             this.pbMonkey.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -469,28 +460,29 @@
             this.pnAtalho.Controls.Add(this.btnAberto);
             this.pnAtalho.Controls.Add(this.btnFechado);
             this.pnAtalho.Controls.Add(this.btnResolvido);
-            this.pnAtalho.Location = new System.Drawing.Point(219, 2);
+            this.pnAtalho.Location = new System.Drawing.Point(231, 2);
             this.pnAtalho.Name = "pnAtalho";
-            this.pnAtalho.Size = new System.Drawing.Size(1096, 132);
+            this.pnAtalho.Size = new System.Drawing.Size(1061, 132);
             this.pnAtalho.TabIndex = 9;
             // 
             // pnLista
             // 
-            this.pnLista.BackColor = System.Drawing.Color.Black;
+            this.pnLista.BackColor = System.Drawing.Color.DimGray;
             this.pnLista.Controls.Add(this.flowLayoutPanel1);
-            this.pnLista.Location = new System.Drawing.Point(231, 134);
+            this.pnLista.Location = new System.Drawing.Point(238, 135);
             this.pnLista.Name = "pnLista";
-            this.pnLista.Size = new System.Drawing.Size(1085, 518);
+            this.pnLista.Size = new System.Drawing.Size(1054, 518);
             this.pnLista.TabIndex = 10;
             this.pnLista.Paint += new System.Windows.Forms.PaintEventHandler(this.pnLista_Paint);
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AllowDrop = true;
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(11, 19);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(10, 8);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1034, 498);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1037, 505);
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.WrapContents = false;
             // 
@@ -498,8 +490,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1318, 654);
+            this.BackColor = System.Drawing.Color.RoyalBlue;
+            this.ClientSize = new System.Drawing.Size(1310, 664);
             this.Controls.Add(this.pnAtalho);
             this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.pnLista);
@@ -537,7 +529,6 @@
         private System.Windows.Forms.Button btnAndamento;
         private System.Windows.Forms.Button btnPendente;
         private System.Windows.Forms.Button btnAberto;
-        private System.Windows.Forms.VScrollBar vScrollBar3;
         private System.Windows.Forms.Panel pnDashboard;
         private System.Windows.Forms.Button btnFechado;
         private System.Windows.Forms.Button btnResolvido;

@@ -66,7 +66,7 @@
             this.lbIdChamado.AutoSize = true;
             this.lbIdChamado.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbIdChamado.ForeColor = System.Drawing.Color.White;
-            this.lbIdChamado.Location = new System.Drawing.Point(411, 10);
+            this.lbIdChamado.Location = new System.Drawing.Point(407, 10);
             this.lbIdChamado.Name = "lbIdChamado";
             this.lbIdChamado.Size = new System.Drawing.Size(23, 19);
             this.lbIdChamado.TabIndex = 52;
@@ -77,7 +77,7 @@
             this.lbCliente.AutoSize = true;
             this.lbCliente.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCliente.ForeColor = System.Drawing.Color.White;
-            this.lbCliente.Location = new System.Drawing.Point(137, 10);
+            this.lbCliente.Location = new System.Drawing.Point(131, 10);
             this.lbCliente.Name = "lbCliente";
             this.lbCliente.Size = new System.Drawing.Size(60, 19);
             this.lbCliente.TabIndex = 51;
