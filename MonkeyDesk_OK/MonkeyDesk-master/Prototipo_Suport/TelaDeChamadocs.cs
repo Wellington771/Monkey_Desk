@@ -8,7 +8,7 @@ namespace Prototipo_Suport
     {
         string strConexao = @"Data Source=.\SQLEXPRESS;Initial Catalog=SuporteChamados;Integrated Security=True";
         int idUsuarioLogado = 1; // Exemplo de usuário logado
-        int idChamado;
+        public int idChamado;
 
         // Construtor que recebe o ID do chamado
         public TelaDeChamadocs(int idChamadoGerado)
@@ -16,8 +16,6 @@ namespace Prototipo_Suport
             InitializeComponent();
             idChamado = idChamadoGerado;
         }
-
-       
 
         private string ObterPrioridadeSelecionada()
         {

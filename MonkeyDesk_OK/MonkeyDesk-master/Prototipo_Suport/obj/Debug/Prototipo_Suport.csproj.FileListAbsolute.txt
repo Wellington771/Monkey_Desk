@@ -37,3 +37,6 @@ D:\Vida_Nova\Bruno_Manzoli\Nova pasta\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_
 D:\Vida_Nova\Bruno_Manzoli\Nova pasta\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.csproj.CoreCompileInputs.cache
 D:\Vida_Nova\Bruno_Manzoli\Nova pasta\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.exe
 D:\Vida_Nova\Bruno_Manzoli\Nova pasta\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\obj\Debug\Prototipo_Suport.pdb
+D:\Vida_Nova\Bruno_Manzoli\Nova pasta\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.exe.config
+D:\Vida_Nova\Bruno_Manzoli\Nova pasta\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.exe
+D:\Vida_Nova\Bruno_Manzoli\Nova pasta\MonkeyDesk_OK\MonkeyDesk-master\Prototipo_Suport\bin\Debug\Prototipo_Suport.pdb
