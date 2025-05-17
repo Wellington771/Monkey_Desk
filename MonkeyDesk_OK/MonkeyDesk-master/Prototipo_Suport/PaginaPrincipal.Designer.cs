@@ -28,23 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.btnAndamento = new System.Windows.Forms.Button();
             this.btnPendente = new System.Windows.Forms.Button();
             this.btnAberto = new System.Windows.Forms.Button();
             this.vScrollBar3 = new System.Windows.Forms.VScrollBar();
             this.pnDashboard = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.label35 = new System.Windows.Forms.Label();
             this.lbFechados = new System.Windows.Forms.Label();
+            this.Fechados = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.label37 = new System.Windows.Forms.Label();
             this.lbResolvidos = new System.Windows.Forms.Label();
+            this.Resolvidos = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
             this.lbPendente = new System.Windows.Forms.Label();
+            this.Pendente = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.lbAndamento = new System.Windows.Forms.Label();
+            this.Andamento = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbAbertos = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -65,6 +68,7 @@
             this.pnAtalho = new System.Windows.Forms.Panel();
             this.pnLista = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.charGrafico = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pnDashboard.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
@@ -79,6 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbMonkey)).BeginInit();
             this.pnAtalho.SuspendLayout();
             this.pnLista.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.charGrafico)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAndamento
@@ -133,6 +138,7 @@
             // pnDashboard
             // 
             this.pnDashboard.BackColor = System.Drawing.Color.White;
+            this.pnDashboard.Controls.Add(this.charGrafico);
             this.pnDashboard.Controls.Add(this.panel17);
             this.pnDashboard.Controls.Add(this.panel18);
             this.pnDashboard.Controls.Add(this.panel6);
@@ -146,123 +152,123 @@
             // 
             // panel17
             // 
-            this.panel17.Controls.Add(this.label35);
             this.panel17.Controls.Add(this.lbFechados);
+            this.panel17.Controls.Add(this.Fechados);
             this.panel17.Location = new System.Drawing.Point(863, 53);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(181, 111);
             this.panel17.TabIndex = 19;
             // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(72, 54);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(38, 41);
-            this.label35.TabIndex = 13;
-            this.label35.Text = "0";
-            // 
             // lbFechados
             // 
             this.lbFechados.AutoSize = true;
-            this.lbFechados.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbFechados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbFechados.Location = new System.Drawing.Point(29, 17);
+            this.lbFechados.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFechados.Location = new System.Drawing.Point(72, 54);
             this.lbFechados.Name = "lbFechados";
-            this.lbFechados.Size = new System.Drawing.Size(126, 28);
-            this.lbFechados.TabIndex = 16;
-            this.lbFechados.Text = "Fechados";
+            this.lbFechados.Size = new System.Drawing.Size(38, 41);
+            this.lbFechados.TabIndex = 13;
+            this.lbFechados.Text = "0";
+            // 
+            // Fechados
+            // 
+            this.Fechados.AutoSize = true;
+            this.Fechados.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fechados.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Fechados.Location = new System.Drawing.Point(29, 17);
+            this.Fechados.Name = "Fechados";
+            this.Fechados.Size = new System.Drawing.Size(126, 28);
+            this.Fechados.TabIndex = 16;
+            this.Fechados.Text = "Fechados";
             // 
             // panel18
             // 
-            this.panel18.Controls.Add(this.label37);
             this.panel18.Controls.Add(this.lbResolvidos);
+            this.panel18.Controls.Add(this.Resolvidos);
             this.panel18.Location = new System.Drawing.Point(221, 53);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(181, 111);
             this.panel18.TabIndex = 18;
             // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(69, 54);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(38, 41);
-            this.label37.TabIndex = 13;
-            this.label37.Text = "0";
-            // 
             // lbResolvidos
             // 
             this.lbResolvidos.AutoSize = true;
-            this.lbResolvidos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbResolvidos.ForeColor = System.Drawing.Color.Cyan;
-            this.lbResolvidos.Location = new System.Drawing.Point(24, 17);
+            this.lbResolvidos.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbResolvidos.Location = new System.Drawing.Point(69, 54);
             this.lbResolvidos.Name = "lbResolvidos";
-            this.lbResolvidos.Size = new System.Drawing.Size(134, 28);
-            this.lbResolvidos.TabIndex = 16;
-            this.lbResolvidos.Text = "Resolvidos";
+            this.lbResolvidos.Size = new System.Drawing.Size(38, 41);
+            this.lbResolvidos.TabIndex = 13;
+            this.lbResolvidos.Text = "0";
+            // 
+            // Resolvidos
+            // 
+            this.Resolvidos.AutoSize = true;
+            this.Resolvidos.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Resolvidos.ForeColor = System.Drawing.Color.Cyan;
+            this.Resolvidos.Location = new System.Drawing.Point(24, 17);
+            this.Resolvidos.Name = "Resolvidos";
+            this.Resolvidos.Size = new System.Drawing.Size(134, 28);
+            this.Resolvidos.TabIndex = 16;
+            this.Resolvidos.Text = "Resolvidos";
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.label13);
             this.panel6.Controls.Add(this.lbPendente);
+            this.panel6.Controls.Add(this.Pendente);
             this.panel6.Location = new System.Drawing.Point(649, 53);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(181, 111);
             this.panel6.TabIndex = 18;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(70, 53);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(38, 41);
-            this.label13.TabIndex = 13;
-            this.label13.Text = "0";
-            // 
             // lbPendente
             // 
             this.lbPendente.AutoSize = true;
-            this.lbPendente.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPendente.ForeColor = System.Drawing.Color.Red;
-            this.lbPendente.Location = new System.Drawing.Point(30, 16);
+            this.lbPendente.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPendente.Location = new System.Drawing.Point(70, 53);
             this.lbPendente.Name = "lbPendente";
-            this.lbPendente.Size = new System.Drawing.Size(121, 28);
-            this.lbPendente.TabIndex = 16;
-            this.lbPendente.Text = "Pendente";
+            this.lbPendente.Size = new System.Drawing.Size(38, 41);
+            this.lbPendente.TabIndex = 13;
+            this.lbPendente.Text = "0";
+            // 
+            // Pendente
+            // 
+            this.Pendente.AutoSize = true;
+            this.Pendente.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pendente.ForeColor = System.Drawing.Color.Red;
+            this.Pendente.Location = new System.Drawing.Point(30, 16);
+            this.Pendente.Name = "Pendente";
+            this.Pendente.Size = new System.Drawing.Size(121, 28);
+            this.Pendente.TabIndex = 16;
+            this.Pendente.Text = "Pendente";
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.lbAndamento);
+            this.panel2.Controls.Add(this.Andamento);
             this.panel2.Location = new System.Drawing.Point(435, 53);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(181, 111);
             this.panel2.TabIndex = 17;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(79, 53);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 41);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "0";
-            // 
             // lbAndamento
             // 
             this.lbAndamento.AutoSize = true;
-            this.lbAndamento.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAndamento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lbAndamento.Location = new System.Drawing.Point(23, 16);
+            this.lbAndamento.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAndamento.Location = new System.Drawing.Point(79, 53);
             this.lbAndamento.Name = "lbAndamento";
-            this.lbAndamento.Size = new System.Drawing.Size(150, 28);
-            this.lbAndamento.TabIndex = 16;
-            this.lbAndamento.Text = "Andamento";
+            this.lbAndamento.Size = new System.Drawing.Size(38, 41);
+            this.lbAndamento.TabIndex = 13;
+            this.lbAndamento.Text = "0";
+            // 
+            // Andamento
+            // 
+            this.Andamento.AutoSize = true;
+            this.Andamento.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Andamento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Andamento.Location = new System.Drawing.Point(23, 16);
+            this.Andamento.Name = "Andamento";
+            this.Andamento.Size = new System.Drawing.Size(150, 28);
+            this.Andamento.TabIndex = 16;
+            this.Andamento.Text = "Andamento";
             // 
             // panel1
             // 
@@ -494,6 +500,22 @@
             this.flowLayoutPanel1.TabIndex = 0;
             this.flowLayoutPanel1.WrapContents = false;
             // 
+            // charGrafico
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.charGrafico.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.charGrafico.Legends.Add(legend1);
+            this.charGrafico.Location = new System.Drawing.Point(10, 183);
+            this.charGrafico.Name = "charGrafico";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.charGrafico.Series.Add(series1);
+            this.charGrafico.Size = new System.Drawing.Size(1034, 324);
+            this.charGrafico.TabIndex = 20;
+            this.charGrafico.Text = "chart1";
+            // 
             // telaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -502,8 +524,8 @@
             this.ClientSize = new System.Drawing.Size(1318, 654);
             this.Controls.Add(this.pnAtalho);
             this.Controls.Add(this.pnMenu);
-            this.Controls.Add(this.pnLista);
             this.Controls.Add(this.pnDashboard);
+            this.Controls.Add(this.pnLista);
             this.Name = "telaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.telaPrincipal_Load);
@@ -528,6 +550,7 @@
             this.pnAtalho.ResumeLayout(false);
             this.pnAtalho.PerformLayout();
             this.pnLista.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.charGrafico)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -551,17 +574,17 @@
         private System.Windows.Forms.PictureBox pbLupa;
         private System.Windows.Forms.Button btnBuscarChamado;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label lbFechados;
+        private System.Windows.Forms.Label Fechados;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label lbResolvidos;
+        private System.Windows.Forms.Label Resolvidos;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label lbPendente;
+        private System.Windows.Forms.Label Pendente;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lbAndamento;
+        private System.Windows.Forms.Label Andamento;
         private System.Windows.Forms.Panel pnMenu;
         private System.Windows.Forms.Panel pnAtalho;
         private System.Windows.Forms.Panel panel1;
@@ -570,6 +593,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel pnLista;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart charGrafico;
     }
 }
 
